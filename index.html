@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Kokate's Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/744096e81f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo1.png" alt="logo" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-times" onclick="toggleMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                </nav>
+                <div class="header-cover">
+                    <div class="header-cover-col-1">
+                        <div class="header-text">
+                            <p>Full Stack Developer</p>
+                            <h1>Hi, I'm <span>Yash</span> <br>Kokate from Mumbai</h1>
+                        </div>
+                    </div>
+                    <div class="header-cover-col-2">
+                        <img class="cover-img" src="images/WhatsApp Image 2024-05-12 at 15.00.47.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- --------------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/passport_photo__1_-removebg-preview (1).png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated and passionate Software and Web Application developer with a strong foundation
+                        in electronics and telecommunication engineering. My journey in technology began with a Bachelor
+                        of Engineering in Electronics and Telecommunication, and I have since honed my skills to become
+                        proficient in developing both software and web applications. With a commitment to excellence and
+                        a keen eye for detail, I am eager to bring innovative solutions to life through code.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Courses & Certifications</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')"></p>  -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Masters in FullStack Development</span><br>ItVedant</li>
+                            <li><span>Python for Web Development</span><br>IBM</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>DKaise Ho aap log</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS app</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelors in Electronics and Telecommunication Engineering</span><br>Sies Graduate
+                                School of Technology <br> CGPA-8</li>
+                            <li><span>HSC</span><br>St.Mary's High School and Junior College <br>
+                                Percentage-67.79</li>
+                            <li><span>SSC</span><br>St.Augustine's High School <br>Percentage-89</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Services------------ -->
+    <!-- <div id="services">
+        <div class="container">
+            <hi class="sub-title"> My Services</hi>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet repellat quaerat est. Delectus
+                        tempore similique enim, porro hic unde? Repellat?</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>Backend Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet repellat quaerat est. Delectus
+                        tempore similique enim, porro hic unde? Repellat?</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet repellat quaerat est. Delectus
+                        tempore similique enim, porro hic unde? Repellat?</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- --------------Portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <hi class="sub-title"> My Work</hi>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Assisteyes-A definitive Web Experience</h3>
+                        <p>Assisteyes is your definitive online resource, skillfully designed using HTML, CSS,
+                            JavaScript and Python(Django Framework). Our platform is dedicated to enhancing
+                            accessibility and providing invaluable support to the visually impaired community in India.
+                            It is a medium that gives access to our product named AssistEyes.Dive into a wealth of
+                            resources and join our mission, all powered by the prowess of web technology.
+                            IDE Used-Visual Studio Code</p>
+                        <p class="tech-stack">Tech Stack-HTML CSS Javascript Python Django MySql</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Assisteyes</h3>
+                        <p>AssistEyes is a vision-based assistant for visually impaired individuals in India, using
+                            Machine Learning and Deep Learning for image recognition, newspaper reading, and GPS
+                            tracking. The hardware includes a Raspberry Pi, webcam, microphone, earphones, and power
+                            source. Users interact via voice commands, activating feature modules for audio feedback.
+                            This system provides an efficient solution for the visually impaired to engage with their
+                            surroundings and stay informed.
+                            Performed Using Python IDE on Raspberry Pi</p>
+                        <p class="tech-stack">Tech Stack-Python Tensorflow OpenCV Machine Learning </p>
+                        <a href="https://github.com/yashkokate/Assisteyes"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Api Creation Using DRF</h3>
+                        <p>This project leverages Django Rest Framework to develop robust and scalable RESTful APIs.
+                            These APIs facilitate seamless data interaction between the backend and frontend, supporting
+                            various CRUD operations.</p>
+                        <p class="tech-stack">Tech Stack- Python Django DjangoRestFramework(DRF) Authentication</p>
+                        <a href="https://github.com/yashkokate/Api"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------Skills------------ -->
+    <div id="skill">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="cover">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/python.png" alt="">
+                    </div>
+                    <p>Python</p>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/django.png" alt="">
+                    </div>
+                    <p>Django</p>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/javascript.png" alt="">
+                    </div>
+                    <p>Javascript</p>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/html.png" alt="">
+                    </div>
+                    <p>Html5</p>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/css.png" alt="">
+                    </div>
+                    <p>Css3</p>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/mysql.png" alt="">
+                    </div>
+                    <p>MySql</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>yashkokate135@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9326202023</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yashkokate01/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://github.com/yashkokate"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/Yash Kokate Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            Designed and Developed by Yash Kokate
+        </div>
+    </footer>
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    function toggleMenu() {
+        const menu = document.querySelector('nav ul');
+        const menuIcon = document.querySelector('.fa-bars');
+        const closeIcon = document.querySelector('.fa-times');
+
+        menu.classList.toggle('open');
+        menuIcon.classList.toggle('hide');
+        closeIcon.classList.toggle('show');
+    }
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwu3mSWX6iBqFYMnQjtJc9FIkoYYFNHNlYWeAMqIObzS9cWECD2aEWTgTis4_vN_g1S/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML="Success!"
+                setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000
+                )
+                form.reset()
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>

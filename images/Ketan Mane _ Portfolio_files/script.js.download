@@ -1,0 +1,70 @@
+
+
+let getMode = localStorage.getItem('Ketan_Portfolio');
+if (getMode == 'black') {
+    document.getElementById('toggle-button').checked = true
+    document.body.style.background = "#1B1B1B"
+    document.body.style.color = "#fff"
+}
+
+function changeColor() {
+    let PageColor = localStorage.getItem('Ketan_Portfolio');
+    if (PageColor == "black") {
+        document.body.style.background = "#fff"
+        document.body.style.color = "#000"
+        document.body.style.transition = "0.4s ease"
+        localStorage.setItem('Ketan_Portfolio', "white")
+    }
+    else {
+        document.body.style.background = "#1B1B1B"
+        document.body.style.color = "#fff"
+        document.body.style.transition = "0.4s ease"
+        localStorage.setItem('Ketan_Portfolio', 'black')
+    }
+
+}
+
+
+$('#contact-form').submit(function (e) {
+    e.preventDefault();
+    const TEMPLATE_ID = 'template_vvaomh9'
+    const SERVICE_ID = 'service_os2h25p'
+    let form = document.getElementById('contact-form')
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form)
+        .then(function (response) {
+            document.getElementById('response').innerHTML = "Message Sent Successfully..!";
+            setInterval(() => {
+                document.getElementById('response').innerHTML = "";
+            }, 3000);
+        }, function (error) {
+            document.getElementById('response').innerHTML = "Sorry..! Try after some time.";
+            document.getElementById('response').style.color = "red";
+        });
+});
+
+
+$("#open-menu").click(function (e) {
+    e.preventDefault();
+    $('ul').css({ 'right': '0px' });
+    $('#close-menu').toggle({ 'display': 'block' });
+    $('#open-menu').toggle({ 'display': 'none' });
+});
+
+$("#close-menu").click(function (e) {
+    e.preventDefault();
+    $('ul').css({ 'right': '-100%' });
+    $('#open-menu').toggle({ 'display': 'block' });
+    $('#close-menu').toggle({ 'display': 'none' });
+});
+
+
+
+// AOS.init();
+var typed = new Typed('#typed', {
+    strings: ['Web Development.', 'Frontend Development', 'Backend Development.'],
+    typeSpeed: 85,
+    loop: true,
+    backDelay: 900,
+    backSpeed: 20,
+});
+
